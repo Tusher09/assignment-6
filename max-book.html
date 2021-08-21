@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Book pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <section class="row mt-4 g-4">
+            <section class="col-2">
+            </section>
+
+            <section class="col-3">
+                <img class="img-fluid" src="images/mac.png" alt="">
+            </section>
+
+            <section class="col-5 px-4">
+                <div>
+                    <h1> Customize your Blue 24-inch iMac with Apple M1 chip. </h1>
+                    <p>apple M1 chip with 8-core Cpu with 4 performance cores and 4 efficiency cores, 7-core GPU, and
+                        16-core Netural Engine 8GB unified memory.</p>
+                </div>
+                <div class="mt-5 p-2">
+                    <p class="fw-bolder">Memory</p>
+                    <button id="8gb-memory">8GB unified memory</button>
+                    <button id="16gb-memory">16GB unified memory</button>
+                </div>
+                <div class="mt-5 p-2">
+                    <p class="fw-bolder">Storage</p>
+                    <button id="256GB SSD">256GB SSD storage</button>
+                    <button id="512GB SSD">512GB SSD storage</button>
+                    <button id="1TB SSD">1TB SSD storage</button>
+                </div>
+                <div class="mt-5 p-2">
+                    <p class="fw-bolder">Choose your delivery option</p>
+                    <button id="free-delivery">Aug 25 FREE Delivary</button>
+                    <button id="cost-delivery">Aug 21 Delivary with $20</button>
+                </div>
+                <div class="row mt-5 p-2 g-0">
+                    <div class="col-5">
+                        <p class="pb-2 fw-bolder border border-top-0 border-end-0 border-start-0">Best Price</p>
+                        <p class="pb-2 fw-bolder border-top-0 border-end-0 border-start-0 border">Extra Memory cost</p>
+                        <p class="pb-2 fw-bolder border-top-0 border-end-0 border-start-0 border">Extra Storage Cost</p>
+                        <p class="pb-2 fw-bolder border-top-0 border-end-0 border-start-0 border border-2 border-dark">
+                            Delivery Charge </p>
+                        <p class="fw-bolder border-0">Total Price</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="pb-2 fw-bolder border-top-0 border-end-0 border-start-0 border">$ <span
+                                id="base-cost">1299</span>
+                        </p>
+                        <p class="pb-2 fw-bolder border-top-0 border-end-0 border-start-0 border">$ <span
+                                id="extra-memory-cost">0</span></p>
+                        <p class="pb-2 fw-bolder border-top-0 border-end-0 border-start-0 border">$ <span
+                                id="extra-storage-cost">0</span></p>
+                        <p class="pb-2 fw-bolder border-top-0 border-end-0 border-start-0 border border-2 border-dark">$
+                            <span id="delivery-cost">0</span>
+                        </p>
+                        <p class="fw-bolder border-0">$ <span id="total-price">1299</span> </p>
+                    </div>
+                    <div class="col-5"></div>
+                    <div>
+                        <p> Add Pomo code</p>
+                        <input id="discount" type="text">
+                        <button id="pomo-code" class="btn btn-success">Apply</button>
+                    </div>
+                </div>
+            </section>
+            <hr>
+        </section>
+        <!-- total ------>
+        <h1 class="text-center mb-4">Total: $ <span id="final-amount">1299</span></h1>
+    </main>
+
+    <script src="js/max.js"></script>
+</body>
+
+</html>
